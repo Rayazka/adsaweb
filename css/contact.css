@@ -1,0 +1,72 @@
+.logo-between-contact{
+   z-index: -999;
+}
+.logo-between-contact .container{
+   position: relative;
+	top: -4.2em;
+}
+.logo-between-contact .container img{
+   width: 10rem;
+}
+
+main.contact{
+   margin-top: -2em;
+}
+
+main.contact .contact-header h3{
+   color: #13643d;
+}
+
+main.contact ul{
+	display:flex;
+	list-style: none;
+}
+main.contact a{
+   color: black;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+}
+main.contact a:hover{
+	color: #0EB956;
+}
+
+main.contact i{
+	font-weight: 900;
+	font-size: 1.2rem;
+	color: #13643d;
+}
+main.contact .links ul{
+	flex-direction: column;
+}
+main.contact .links ul li{
+	padding: 5px 0 5px 0;
+}
+main.contact .phone ul{
+	flex-direction: column;
+}
+
+@media(min-width:768px) and (max-width: 1023px) {
+	main.contact .container.contact-header{
+		margin: 0;
+		max-width: 100% !important;
+	}
+}
+
+@media(max-width:767px){
+	
+	header .headline h3{
+		margin-top: 2em;
+		font-size: 2.5rem !important;
+	}
+
+	main.contact .container.contact-header{
+		margin: 0;
+		max-width: 100% !important;
+		
+	}
+	main.contact .container.contact-header p,
+	main.contact .container.contact-header address,
+	main.contact .container.contact-header a{
+		font-size: 1.1rem !important;
+	}
+}

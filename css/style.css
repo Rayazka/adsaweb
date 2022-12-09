@@ -1,0 +1,393 @@
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: "Poppins", sans-serif;
+	vertical-align: baseline;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+/* HEADER */
+header{
+	position: relative;
+}
+/* BANNER */
+header .image-banner{
+	position: relative;
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url("/img/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 31.5rem;
+}
+header .header-banner{
+	background-color:#13643d;
+	position: relative;
+	z-index: 999;
+}
+header .header-banner .text-header-banner{
+	list-style: none;
+}
+header .header-banner .text-header-banner a{
+	text-decoration: none;
+	color: white;
+	letter-spacing:1px;
+	transition: all .2s ease-in;
+	margin-right: .7em;
+}
+header .header-banner .text-header-banner a:hover{
+	color: gold;
+}
+/* END BANNER */
+
+/* NAVBAR */
+header nav .navbar-brand{
+	margin-left: -2em;
+	z-index: 999;
+}
+header nav .container-fluid{
+	align-items: flex-start !important;
+}
+header nav a .brand-logo{
+	width: 13rem !important;
+}
+header nav a.nav-link{
+	color: whitesmoke !important;
+	margin-right: 2em !important;
+	opacity: .9;
+	transition: all .2s ease-in;
+}
+header nav a.nav-link.last-link{
+	margin-right: 0 !important;
+}
+header nav a.nav-link.active{
+	color: gold !important;
+	opacity: 1;
+}
+header nav a.nav-link:hover{
+	color: gold !important;
+}
+header nav .offcanvas.show {
+	background-color: #13643d;
+	transition: all .3s ease-out;
+}
+header nav .offcanvas.show .offcanvas-header{
+	background-color: #0a4b2d;
+}
+header nav .offcanvas.show .nav-item{
+	font-size: 1.2rem;
+	margin-top: 1.2em;
+	position: relative;
+}
+header nav .offcanvas.show .nav-item::after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	border-radius: 25px;
+	background: #f9f9f9;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+header nav .offcanvas.show .brand-logo{
+	width: 8rem;
+	margin-top: 2em;
+	margin-left: 2em;
+}
+.navbar-dark .navbar-toggler{
+	color: white;
+	border-color: white;
+	margin-top: 1em;	
+}
+/* END NAVBAR */
+
+/* HEADLINE */
+header .headline .headline-text{
+	color: white;
+	margin-top: 3.5em;
+}
+header .headline .headline-text h3{
+	font-size: 3rem;
+}
+header .headline .headline-text .btn{
+	transition: all .3s ease-out;
+}
+header .headline .headline-text .btn:hover{
+	background-color: #13643d;
+	border-color: #13643d;
+	color: white;
+}
+/* END HEADLINE */
+
+/* END HEADER */
+
+.logo-between{
+	background-color: #f9f9f9;
+	z-index: -999;
+}
+.logo-between .container{
+	position: relative;
+	top: -4.2em;
+}
+.logo-between .container img{
+	width: 10rem;
+}
+
+/* MAIN */
+main .tagline{
+	position: relative;
+	color: #13643d;
+	padding-bottom: 22px;
+}
+main .tagline::after{
+	content: "";
+	display: inline-block;
+	width: 100px;
+	height: 5px;
+	border-radius: 25px;
+	background: #6c851f;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+
+main .about-us{
+	position: relative;
+	background-color: #f9f9f9;
+	margin-top: -2em;
+	z-index: 999;
+}
+main .container-service-card{
+   background-color: #13643d;
+}
+main .about-us-2{
+	background-color: #f9f9f9;
+}
+
+main .service-card .card{
+	border:none;
+	background-color: white;
+	box-shadow: 0 0 15px 5px rgb(0 0 0 / 10%);
+	transition: all .2s linear;
+}
+main .service-card .card:hover{
+	margin-top: -.5em;
+}
+main .service-card .card i{
+	font-size: 2.5rem;
+	color: #13643d;
+}
+main .container-product{
+	justify-content: center !important;
+}
+main .product .carousel-inner{
+	border-radius: 15px;
+	box-shadow: 0 0 15px 5px rgb(0 0 0 / 30%);
+}
+main .col-card,
+main .col-card img{
+	transition: all 0.3s linear;
+}
+main .col-card:hover{
+	margin-top: -.6em;
+}
+main .col-card:hover img{
+	filter: brightness(70%)
+}
+main .product .carousel-inner .text-product{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background-color: rgba(0,0,0,.6);
+	width: 100%;
+}
+main .product .carousel-inner .text-product a{
+	color: white;
+	text-decoration: none;
+}
+
+/* END MAIN */
+
+/* FOOTER */
+footer{
+	background-color: #121212;
+}
+footer p{
+	color: white;
+	opacity: .7;
+}
+footer h3{
+	color: #0EB956;
+}
+footer ul{
+	display:flex;
+	list-style: none;
+}
+footer a{
+	color: white;
+	opacity: .7;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+}
+footer a:hover{
+	color: #c9cb4e;
+	opacity: 1;
+}
+footer .social-icons ul li{
+	padding-right: .5em;
+}
+footer .social-icons ul li a{
+	margin:0;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	border: 2px solid #c9cb4e;
+	border-radius: 15px;
+}
+footer .social-icons ul li a:hover{
+	background-color: #c9cb4e;
+}
+footer .social-icons ul li a i{
+	color: white;
+	font-size: 18px;
+}
+footer i{
+	font-weight: 900;
+	font-size: .8rem;
+	color: #c9cb4e;
+}
+footer .links ul{
+	flex-direction: column;
+}
+footer .links ul li{
+	padding: 5px 0 5px 0;
+}
+footer address{
+	color: white;
+	opacity: .7;
+}
+footer .phone ul{
+	flex-direction: column;
+}
+footer span.line{
+	display:block;
+   width:100%;
+   border-top: 1px solid white;
+	opacity: .7;
+}
+
+
+/* END FOOTER */
+
+/* RESPONSIVE */
+@media(min-width:768px) and (max-width: 1023px) {
+	/* BANNER */
+	header .header-banner .text-header-banner{
+		font-size: .8rem !important;
+	}
+	/* END BANNER */
+
+	/* NAVBAR */
+	header nav a .brand-logo{
+		width: 11rem !important;
+	}
+	header nav a.nav-link{
+		margin-right: .5em;
+	}
+	/* END NAVBAR */
+
+	/* FOOTER */
+	footer .container.container-footer{
+		margin: 0;
+		max-width: 100% !important;
+	}
+	/* END FOOTER */
+
+}
+
+@media(max-width:767px){
+	/* NAVBAR */
+	header nav a .brand-logo{
+		width: 8rem !important;
+		margin-left: .3em;
+	}
+	/* END NAVBAR */
+
+	/* BANNER */
+	header .header-banner .text-header-banner a{
+		font-size: .8rem;
+	}
+	header .header-banner .text-header-banner a:nth-child(1){
+		padding-right: 2px;
+		margin-right: 10px;
+	}
+	/* END BANNER */
+
+	/* HEADLINE */
+	header .headline .headline-text h3{
+		font-size: 1.8rem;
+	}
+	/* END HEADLINE */
+
+	/* MAIN */
+	main .about-us p,
+	main .about-us-2 p{
+		font-size: 1rem !important;
+	}
+	main .about-us .text-about-right p{
+		text-align: end !important;
+	}
+	main .service-card .col-sm-1{
+		margin-top: 1em;
+	}
+	main .service-card .col-sm-1:nth-child(1)
+	{
+		margin-top: 0 !important;
+	}
+	main .service-card i{
+		font-size: 2rem !important;
+	}
+	main .col-card:nth-child(2){
+		padding-top: 3rem;
+	}
+	main .col-card:hover,
+	main .service-card .card:hover{
+		margin-top: 0 !important;
+	}
+
+	/* END MAIN */
+
+
+
+	/* FOOTER */
+	footer .links{
+		margin: 1.5em 0 1em 0;
+	}
+	footer .container.container-footer{
+		margin: 0;
+		max-width: 100% !important;
+	}
+	/* END FOOTER */
+}
+
+/* END RESPONSIVE */

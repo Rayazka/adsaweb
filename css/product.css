@@ -1,0 +1,127 @@
+
+.logo-between-product{
+   z-index: -999;
+}
+.logo-between-product .container{
+   position: relative;
+	top: -4.2em;
+}
+.logo-between-product .container img{
+   width: 10rem;
+}
+
+main.product{
+   margin-top: -2em;
+}
+
+main.product .container-fluid.product {
+    padding: 0 !important;
+}
+
+main.product .container-service-card .card{
+	border:none;
+	background-color: white;
+	box-shadow: 0 0 15px 5px rgb(0 0 0 / 10%);
+	transition: all .2s linear;
+}
+main.product .container-service-card .card:hover{
+	margin-top: -.5em;
+}
+main.product .container-service-card .card i{
+	font-size: 2.5rem;
+	color: #13643d;
+}
+main.product .container-wp{
+	background-color: #f9f9f9;
+	padding: 5em 0 5em 0;
+}
+
+main.product .title-product{
+	color: #13643d;
+	letter-spacing: .6px;
+}
+main.product ul{
+	list-style: none;
+}
+main.product ul li{
+	padding: .2em 0 .2em 0;
+}
+main.product .container-bp{
+	padding: 5em 0 5em 0;
+}
+main.product .container-bp ul{
+	text-align: right;
+	list-style-position: inside;
+}
+main.product .container-wp ul li:before{
+	content: "\2022";
+	color: #13643d;
+	font-weight: bold;
+	font-size: 1.5em;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em; 
+}
+main.product .container-bp ul li:after{
+	content: "\2022";
+	color: #13643d;
+	font-weight: bold; 
+	font-size: 1.5em;
+	display: inline-block; 
+	width: 1em;
+}
+
+@media(min-width:768px) and (max-width: 1023px) {
+	main.product ul li{
+		padding: 0;
+	}
+}
+
+@media(max-width:767px){
+
+	header .headline h3 {
+		margin-top: 2em;
+		font-size: 2.5rem !important;
+  	}
+
+	main.product ul li{
+		padding: 0;
+		font-size: 1.1rem !important;
+	}
+
+	main.product .container-service-card i{
+		font-size: 2rem !important;
+	}
+
+	main.product .container-wp p,
+	main.product .container-bp p{
+		font-size: 1.1rem !important;
+	}
+
+	main.product .container-wp{
+		padding: 5em 0 2em 0;
+	}
+	main.product .container-bp{
+		padding: 3em 0 5em 0;
+	}
+
+	main.product .container-bp ul{
+		text-align: left;
+	}
+	main.product .container-bp ul li:after{
+		display: none;
+	}
+	main.product .container-bp ul li:before{
+		content: "\2022";
+		color: #13643d;
+		font-weight: bold;
+		font-size: 1.5em;
+		display: inline-block; 
+		width: 1em;
+	}
+
+	main.product .container-service-card .card:hover{
+		margin-top:0 !important;
+	}
+
+}

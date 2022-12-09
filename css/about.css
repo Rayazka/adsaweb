@@ -1,0 +1,42 @@
+main.about-page .about-profile-image .card-profile{
+   position: relative;
+   height: 100%;
+   transition: all 0.3s linear;
+}
+
+main.about-page .about-profile-image .card-profile img{
+   border-radius: 15px;
+	box-shadow: 0 0 15px 5px rgb(0 0 0 / 30%);
+}
+
+main.about-page .about-profile-image .card-profile:hover{
+	margin-top: -.6em;
+}
+main.about-page .about-profile-image .card-profile img{
+	transition: all 0.3s linear;
+}
+main.about-page .about-profile-image .card-profile:hover img{
+	filter: brightness(70%)
+}
+main.about-page .about-profile-image .text-profile{
+   border-radius: 0 0 15px 15px;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background-color: rgba(0,0,0,.6);
+	width: 100%;
+}
+main.about-page .about-profile-image .text-profile p{
+	color: white;
+}
+
+@media(max-width:767px){
+	header .headline h3 {
+		margin-top: 2em;
+		font-size: 2.5rem !important;
+  	}
+
+	main.about-page .about-profile-image .card-profile:hover{
+		margin-top:0 !important;
+	}
+}
